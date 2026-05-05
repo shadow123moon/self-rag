@@ -1,0 +1,345 @@
+[
+  {
+    "id": "redis_001",
+    "question": "Redis 为什么这么快？",
+    "expected_documents": ["面渣逆袭 Redis 篇.pdf"],
+    "expected_keywords": ["内存", "单线程", "IO多路复用", "数据结构", "C语言"],
+    "should_have_references": true
+  },
+  {
+    "id": "redis_002",
+    "question": "Redis 支持哪些基本数据结构？",
+    "expected_documents": ["面渣逆袭 Redis 篇.pdf"],
+    "expected_keywords": ["string", "hash", "list", "set", "zset"],
+    "should_have_references": true
+  },
+  {
+    "id": "redis_003",
+    "question": "什么是缓存穿透？如何解决？",
+    "expected_documents": ["面渣逆袭 Redis 篇.pdf"],
+    "expected_keywords": ["缓存穿透", "缓存空值", "布隆过滤器"],
+    "should_have_references": true
+  },
+  {
+    "id": "redis_004",
+    "question": "RDB 和 AOF 持久化有什么区别？",
+    "expected_documents": ["面渣逆袭 Redis 篇.pdf"],
+    "expected_keywords": ["RDB", "AOF", "快照", "日志", "恢复速度"],
+    "should_have_references": true
+  },
+  {
+    "id": "redis_005",
+    "question": "Redis 主从复制的原理是什么？",
+    "expected_documents": ["面渣逆袭 Redis 篇.pdf"],
+    "expected_keywords": ["主从复制", "psync", "全量复制", "部分复制"],
+    "should_have_references": true
+  },
+  {
+    "id": "redis_006",
+    "question": "Redis Sentinel 是如何实现自动故障转移的？",
+    "expected_documents": ["面渣逆袭 Redis 篇.pdf"],
+    "expected_keywords": ["哨兵", "主观下线", "客观下线", "领导者选举", "故障转移"],
+    "should_have_references": true
+  },
+  {
+    "id": "redis_007",
+    "question": "Redis 集群如何对数据进行分区？",
+    "expected_documents": ["面渣逆袭 Redis 篇.pdf"],
+    "expected_keywords": ["虚拟槽", "slot", "16384", "一致性哈希"],
+    "should_have_references": true
+  },
+  {
+    "id": "redis_008",
+    "question": "如何用 Redis 实现分布式锁？",
+    "expected_documents": ["面渣逆袭 Redis 篇.pdf"],
+    "expected_keywords": ["setnx", "expire", "set ex nx", "Redisson"],
+    "should_have_references": true
+  },
+  {
+    "id": "redis_009",
+    "question": "Redis 的过期键删除策略有哪些？",
+    "expected_documents": ["面渣逆袭 Redis 篇.pdf"],
+    "expected_keywords": ["惰性删除", "定期删除", "maxmemory-policy"],
+    "should_have_references": true
+  },
+  {
+    "id": "redis_010",
+    "question": "什么是缓存雪崩？如何预防？",
+    "expected_documents": ["面渣逆袭 Redis 篇.pdf"],
+    "expected_keywords": ["缓存雪崩", "均匀过期", "热点数据永不过期", "熔断降级"],
+    "should_have_references": true
+  },
+  {
+    "id": "redis_011",
+    "question": "Redis 的 SDS 和 C 语言字符串相比有什么优势？",
+    "expected_documents": ["面渣逆袭 Redis 篇.pdf"],
+    "expected_keywords": ["SDS", "len", "自动扩展", "二进制安全", "内存分配"],
+    "should_have_references": true
+  },
+  {
+    "id": "redis_012",
+    "question": "Redis 6.0 的多线程是怎么回事？",
+    "expected_documents": ["面渣逆袭 Redis 篇.pdf"],
+    "expected_keywords": ["多线程", "网络IO", "命令执行单线程", "协议解析"],
+    "should_have_references": true
+  },
+  {
+    "id": "redis_013",
+    "question": "如何使用 Redis 实现异步消息队列？",
+    "expected_documents": ["面渣逆袭 Redis 篇.pdf"],
+    "expected_keywords": ["list", "lpush", "rpop", "brpop", "pub/sub"],
+    "should_have_references": true
+  },
+  {
+    "id": "redis_014",
+    "question": "跳跃表在 Redis 中是如何实现的？",
+    "expected_documents": ["面渣逆袭 Redis 篇.pdf"],
+    "expected_keywords": ["skiplist", "层", "跨度", "排位", "zset"],
+    "should_have_references": true
+  },
+  {
+    "id": "redis_015",
+    "question": "如何保证缓存和数据库的数据一致性？",
+    "expected_documents": ["面渣逆袭 Redis 篇.pdf"],
+    "expected_keywords": ["删除缓存", "延时双删", "消息队列", "canal", "最终一致性"],
+    "should_have_references": true
+  }
+,
+  {
+    "id": "pft_001",
+    "question": "PFT论文提出的Progressive Focused Attention（PFA）机制是如何工作的？",
+    "expected_documents": ["2503.20337v1.pdf"],
+    "expected_keywords": ["Hadamard", "继承", "注意力图", "稀疏", "逐层"],
+    "should_have_references": true
+  },
+  {
+    "id": "pft_002",
+    "question": "PFA相比普通的自注意力和稀疏注意力有什么优势？",
+    "expected_documents": ["2503.20337v1.pdf"],
+    "expected_keywords": ["过滤", "无关token", "计算开销", "大窗口", "聚焦"],
+    "should_have_references": true
+  },
+  {
+    "id": "pft_003",
+    "question": "PFT网络的整体架构是怎样的？包含哪些模块？",
+    "expected_documents": ["2503.20337v1.pdf"],
+    "expected_keywords": ["PFA Block", "PFAL", "SMM", "shifted window"],
+    "should_have_references": true
+  },
+  {
+    "id": "pft_004",
+    "question": "什么是Sparse Matrix Multiplication（SMM）？PFT为什么需要它？",
+    "expected_documents": ["2503.20337v1.pdf"],
+    "expected_keywords": ["SMM", "CUDA", "跳过", "索引矩阵", "加速"],
+    "should_have_references": true
+  },
+  {
+    "id": "pft_005",
+    "question": "PFT是如何控制注意力的聚焦程度的？focus ratio的作用是什么？",
+    "expected_documents": ["2503.20337v1.pdf"],
+    "expected_keywords": ["α", "focus ratio", "衰减", "K值", "指数下降"],
+    "should_have_references": true
+  },
+  {
+    "id": "pft_006",
+    "question": "PFT计算复杂度的优势在哪里？与传统自注意力相比节省了多少？",
+    "expected_documents": ["2503.20337v1.pdf"],
+    "expected_keywords": ["二次复杂度", "指数下降", "6.25%", "α=0.5"],
+    "should_have_references": true
+  },
+  {
+    "id": "pft_007",
+    "question": "PFT模型训练使用了哪些数据集和训练策略？",
+    "expected_documents": ["2503.20337v1.pdf"],
+    "expected_keywords": ["DF2K", "DIV2K", "AdamW", "500K", "64×64"],
+    "should_have_references": true
+  },
+  {
+    "id": "pft_008",
+    "question": "PFT在轻量化SR任务上的表现如何？与ATD-light相比有什么优劣？",
+    "expected_documents": ["2503.20337v1.pdf"],
+    "expected_keywords": ["PFT-light", "PSNR", "SSIM", "ATD", "Urban100"],
+    "should_have_references": true
+  },
+  {
+    "id": "pft_009",
+    "question": "PFT中窗大小的消融实验得出了什么结论？",
+    "expected_documents": ["2503.20337v1.pdf"],
+    "expected_keywords": ["窗大小", "32×32", "16×16", "Urban100", "性能提升"],
+    "should_have_references": true
+  },
+  {
+    "id": "pft_010",
+    "question": "PFT的注意力分布可视化展示了什么特点？与普通自注意力有什么区别？",
+    "expected_documents": ["2503.20337v1.pdf"],
+    "expected_keywords": ["注意力分布", "散乱", "聚焦", "关键token", "逐层"],
+    "should_have_references": true
+  }
+,
+  {
+    "id": "amef_001",
+    "question": "AMEFNet的网络结构由哪几个核心模块组成？",
+    "expected_documents": ["基于注意力机制的多曝光图像融合算法.pdf"],
+    "expected_keywords": ["特征提取", "注意力机制", "特征重建", "FEM", "FRM"],
+    "should_have_references": true
+  },
+  {
+    "id": "amef_002",
+    "question": "AMEFNet为什么使用双通道Unet架构来提取特征？",
+    "expected_documents": ["基于注意力机制的多曝光图像融合算法.pdf"],
+    "expected_keywords": ["不共享参数", "欠曝光", "过曝光", "独立权重", "固有特征"],
+    "should_have_references": true
+  },
+  {
+    "id": "amef_003",
+    "question": "AMEFNet中的注意力机制模块是如何工作的？",
+    "expected_documents": ["基于注意力机制的多曝光图像融合算法.pdf"],
+    "expected_keywords": ["Squeeze", "Excitation", "全局平均池化", "通道权值", "Sigmoid"],
+    "should_have_references": true
+  },
+  {
+    "id": "amef_004",
+    "question": "AMEFNet的特征重建模块使用了什么特殊结构？有什么作用？",
+    "expected_documents": ["基于注意力机制的多曝光图像融合算法.pdf"],
+    "expected_keywords": ["DRDB", "扩张残差稠密单元", "感受野", "饱和区域"],
+    "should_have_references": true
+  },
+  {
+    "id": "amef_005",
+    "question": "AMEFNet的损失函数是如何设计的？",
+    "expected_documents": ["基于注意力机制的多曝光图像融合算法.pdf"],
+    "expected_keywords": ["L2范数", "内容损失", "SSIM", "结构损失", "λ"],
+    "should_have_references": true
+  },
+  {
+    "id": "amef_006",
+    "question": "AMEFNet是如何解决多曝光融合中缺乏真值图像问题的？",
+    "expected_documents": ["基于注意力机制的多曝光图像融合算法.pdf"],
+    "expected_keywords": ["无监督学习", "无真值", "损失函数约束", "端到端"],
+    "should_have_references": true
+  },
+  {
+    "id": "amef_007",
+    "question": "AMEFNet在消融实验中验证了哪些模块的有效性？结论是什么？",
+    "expected_documents": ["基于注意力机制的多曝光图像融合算法.pdf"],
+    "expected_keywords": ["注意力模块", "RAMEFNet", "超参数λ", "消融"],
+    "should_have_references": true
+  },
+  {
+    "id": "amef_008",
+    "question": "AMEFNet与MEF-GAN等已有方法相比，在主观视觉效果上有哪些优势？",
+    "expected_documents": ["基于注意力机制的多曝光图像融合算法.pdf"],
+    "expected_keywords": ["伪影", "暗区", "亮度不均匀", "失真", "自然"],
+    "should_have_references": true
+  },
+  {
+    "id": "amef_009",
+    "question": "AMEFNet在哪些客观评价指标上取得了最优结果？指标含义是什么？",
+    "expected_documents": ["基于注意力机制的多曝光图像融合算法.pdf"],
+    "expected_keywords": ["AG", "SF", "VIF", "PSNR", "EN"],
+    "should_have_references": true
+  },
+  {
+    "id": "amef_010",
+    "question": "AMEFNet的算法复杂度如何？使用了哪些数据集进行训练和测试？",
+    "expected_documents": ["基于注意力机制的多曝光图像融合算法.pdf"],
+    "expected_keywords": ["FLOPs", "165.6G", "SICE", "MEFB", "RTX 2080ti"],
+    "should_have_references": true
+  },
+  {
+    "id": "negative_001",
+    "question": "你好",
+    "expected_documents": [],
+    "expected_keywords": [],
+    "should_have_references": false
+  },
+  {
+    "id": "negative_002",
+    "question": "你是谁？",
+    "expected_documents": [],
+    "expected_keywords": [],
+    "should_have_references": false
+  },
+  {
+    "id": "negative_003",
+    "question": "今天天气怎么样？",
+    "expected_documents": [],
+    "expected_keywords": [],
+    "should_have_references": false
+  },
+  {
+    "id": "negative_004",
+    "question": "帮我写一封请假条",
+    "expected_documents": [],
+    "expected_keywords": [],
+    "should_have_references": false
+  },
+  {
+    "id": "negative_005",
+    "question": "你知道我叫什么吗？",
+    "expected_documents": [],
+    "expected_keywords": [],
+    "should_have_references": false
+  },
+  {
+    "id": "hard_redis_001",
+    "question": "为什么 Redis 不容易被线程上下文切换拖慢？",
+    "expected_documents": ["面渣逆袭 Redis 篇.pdf"],
+    "expected_keywords": ["单线程", "上下文切换", "内存", "IO多路复用"],
+    "expected_reference_keywords": ["单线程", "多路复用", "内存"],
+    "should_have_references": true
+  },
+  {
+    "id": "hard_redis_002",
+    "question": "Redis 的多线程是不是说明命令执行也并行了？",
+    "expected_documents": ["面渣逆袭 Redis 篇.pdf"],
+    "expected_keywords": ["网络IO", "协议解析", "命令执行", "单线程"],
+    "expected_reference_keywords": ["多线程", "网络IO", "命令执行"],
+    "should_have_references": true
+  },
+  {
+    "id": "hard_redis_003",
+    "question": "RDB 和 AOF 在恢复速度、数据完整性上怎么取舍？",
+    "expected_documents": ["面渣逆袭 Redis 篇.pdf"],
+    "expected_keywords": ["RDB", "AOF", "恢复", "数据完整性", "快照"],
+    "expected_reference_keywords": ["RDB", "AOF", "快照", "日志"],
+    "should_have_references": true
+  },
+  {
+    "id": "hard_pft_001",
+    "question": "PFT 为什么说自己能在大窗口注意力里减少无关 token 的干扰？",
+    "expected_documents": ["2503.20337v1.pdf"],
+    "expected_keywords": ["PFA", "无关token", "大窗口", "聚焦", "稀疏"],
+    "expected_reference_keywords": ["PFA", "window", "token", "sparse"],
+    "should_have_references": true
+  },
+  {
+    "id": "hard_pft_002",
+    "question": "PFT 的注意力继承机制和普通 self-attention 的主要差别是什么？",
+    "expected_documents": ["2503.20337v1.pdf"],
+    "expected_keywords": ["继承", "注意力图", "Hadamard", "逐层", "聚焦"],
+    "expected_reference_keywords": ["Hadamard", "attention map", "PFA"],
+    "should_have_references": true
+  },
+  {
+    "id": "hard_negative_001",
+    "question": "MySQL 为什么查询这么快？",
+    "expected_documents": [],
+    "expected_keywords": [],
+    "should_have_references": false
+  },
+  {
+    "id": "hard_negative_002",
+    "question": "Transformer 能不能解决 Redis 缓存雪崩？",
+    "expected_documents": [],
+    "expected_keywords": [],
+    "should_have_references": false
+  },
+  {
+    "id": "hard_negative_003",
+    "question": "AMEFNet 可以用来做 Redis 主从复制吗？",
+    "expected_documents": [],
+    "expected_keywords": [],
+    "should_have_references": false
+  }
+]

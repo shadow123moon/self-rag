@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local IDE
+.idea/
+.vscode/
+
+# Secrets / local config
+.env
+.env.*
+!.env.example
+
+# Runtime data
+storage/uploads/
+chroma_data/
+debug_outputs/
+chat_history/
+*.sqlite3
+*.db
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local scratch / generated eval outputs
+t1.py
+test_main.http
+eval/eval_results*.json
