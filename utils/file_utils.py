@@ -1,7 +1,6 @@
 import os
 import uuid
 import hashlib
-from typing import Tuple
 from fastapi import UploadFile, HTTPException
 
 ALLOWED_EXTENSIONS = {".txt", ".pdf", ".docx"}
@@ -34,12 +33,3 @@ def compute_md5(file_path: str) -> str:
     return h.hexdigest()
 
 
-async def compute_md5_from_upload(file: UploadFile) -> Tuple[str, bytes]:
-    """异步读取文件流，同时计算 MD5 和获取完整内容"""
-    h = hashlib.md5()
-    content = bytearray()
-    while chunk := await file.read(8192):   # 分块读取
-        h.update(chunk)
-        content.extend(chunk)
-    # 如果需要可以 file.seek(0)，但我们已经拿到 content，后续不再用 file.read()
-    return h.hexdigest(), bytes(content)

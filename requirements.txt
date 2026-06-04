@@ -16,3 +16,4 @@ requests
 rank-bm25
 jieba
 pymupdf
+python-docx
